@@ -14,13 +14,13 @@
       <ul>
         <li ng-repeat="task in taskList track by $index">
           {{task}}
-          <!-- <button ng-click="removeTask()">Remove</button> -->
+          <button ng-click="removeThis(task)">Remove</button>
         </li>
       </ul>
     </div>
 
     <div>
-      <input type="text" ng-model="message" /><br>
+      <input type="text" ng-model="task" /><br>
       <button ng-click="haddleClick()">Click Here!</button>
     </div>
 
